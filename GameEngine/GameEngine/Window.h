@@ -1,10 +1,13 @@
 #include <string>
-
+#include <GLFW/glfw3.h>
 class Window {
   public:
-    inline Window(string Title, int width, int height) {
-      
+    GLFWwindow* window;
+    inline Window(string title, int width, int height) {
+      window = glfwCreateWindow(width, height, title, NULL, NULL);
     }
-    ~Window();
+    inline ~Window() {
+      glfwDestroyWindow(window); 
+    }
   private:
 }
