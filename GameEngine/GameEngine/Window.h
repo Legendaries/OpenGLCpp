@@ -1,5 +1,5 @@
-#ifndef MATRIX4F_H
-#define	MATRIX4F_H
+#ifndef WINDOW_H
+#define	WINDOW_H
 
 #include <string>
 #include <GLFW/glfw3.h>
