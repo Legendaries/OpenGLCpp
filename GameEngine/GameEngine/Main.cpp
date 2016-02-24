@@ -1,6 +1,8 @@
 //Include GLFW  
 #include <GLFW/glfw3.h>  
 
+#include <Window.h>
+
 //Include the standard C++ headers  
 #include <stdio.h>  
 #include <stdlib.h>  
@@ -33,8 +35,9 @@ int main(void) {
 	//glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);  
 
 	//Declare a window object  
-	GLFWwindow* window;
-
+	//GLFWwindow* window;
+	Window window ("Test", 800, 600);
+	
 	//Create a window and create its OpenGL context  
 	window = glfwCreateWindow(640, 480, "Test Window", NULL, NULL);
 
@@ -74,7 +77,9 @@ int main(void) {
 	while (!glfwWindowShouldClose(window));
 
 	//Close OpenGL window and terminate GLFW  
-	glfwDestroyWindow(window);
+	//glfwDestroyWindow(window);
+	window = null;
+	
 	//Finalize and clean up GLFW  
 	glfwTerminate();
 
