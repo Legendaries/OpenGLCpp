@@ -51,8 +51,6 @@ int main(void) {
 	//Sets the key callback  
 	glfwSetKeyCallback(window, key_callback);
 
-
-
 	//Set a background color  
 	glClearColor(0.0f, 0.0f, 1.0f, 0.0f);
 
