@@ -1,7 +1,7 @@
 //Include GLFW  
 #include <GLFW/glfw3.h>  
 
-#include <Window.h>
+#include "Window.h"
 
 //Include the standard C++ headers  
 #include <stdio.h>  
@@ -36,10 +36,10 @@ int main(void) {
 
 	//Declare a window object  
 	//GLFWwindow* window;
-	Window window ("Test", 800, 600);
+	Window window ("Test", 1280, 720);
 	
 	//Create a window and create its OpenGL context  
-	window = glfwCreateWindow(640, 480, "Test Window", NULL, NULL);
+	//window = glfwCreateWindow(640, 480, "Test Window", NULL, NULL);
 
 	//If the window couldn't be created  
 	if (!window) {
