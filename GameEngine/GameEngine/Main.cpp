@@ -68,7 +68,7 @@ int main(void) {
 		glVertex2f(1.0, 1.0); glColor3f(1.0, 0.0, 1.0);
 		glVertex2f(1.0, 0.0);
 		glEnd();
-		//Swap buffers  
+		//Swap buffers
 		glfwSwapBuffers(window);
 		//Get and organize events, like keyboard and mouse input, window resizing, etc...  
 		glfwPollEvents();
